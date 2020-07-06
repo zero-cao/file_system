@@ -11,8 +11,8 @@ Vue.config.productionTip = false
 // Vue.prototype.$http = axios
 Vue.use(VueAxios, axios)
 
-// axios.defaults.baseURL = 'http://10.74.97.117:8000'
-axios.defaults.baseURL = 'http://127.0.0.1:8000'
+// axios.defaults.baseURL = 'http://10.74.97.117:7000'
+axios.defaults.baseURL = 'http://127.0.0.1:7001'
 axios.interceptors.request.use(config => {
   config.headers.Authorization = window.sessionStorage.getItem('token')
   return config
